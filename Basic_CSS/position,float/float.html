@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      body {
+        background-color: rebeccapurple;
+      }
+      img {
+        float: left;
+        clear: left;
+      }
+      #i {
+        float: right;
+      }
+      p {
+        /* position: relative; */
+        background-color: antiquewhite;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <!-- The clear Property
+When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+
+The clear property specifies what should happen with the element that is next to a floating element.
+
+The clear property can have one of the following values:
+
+none - The element is not pushed below left or right floated elements. This is default
+left - The element is pushed below left floated elements
+right - The element is pushed below right floated elements
+both - The element is pushed below both left and right floated elements
+inherit - The element inherits the clear value from its parent
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page. -->
+  <body>
+    <div class="io">
+      <img src="../download.jpg" alt="Download img" />
+      <img id="i" src="../download.jpg" alt="Download img" />
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        aliquid ab porro molestiae minus, possimus assumenda alias, eligendi
+        suscipit incidunt deserunt tempora sapiente, quae ex dolores aperiam
+        distinctio. Neque quia vero at veritatis delectus animi cupiditate
+        numquam provident earum accusantium. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Voluptatem tempora, perspiciatis deleniti
+        iste obcaecati aspernatur praesentium tenetur maxime pariatur reiciendis
+        natus vel repellendus totam quasi in sint suscipit temporibus non
+        blanditiis deserunt expedita rerum incidunt maiores. Saepe quia, est ea
+        excepturi labore perspiciatis facere laboriosam illum laudantium officia
+        reiciendis earum?
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formspree_Form_submission</title>
+  <style>
+    form{
+      margin: 100px auto;
+      border: 2px solid rgb(145, 142, 142);
+      background-color: lavender;
+      width: 200px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: ;
+    }
+    input{
+      border-radius: 5px;
+      height: 20px;
+      box-shadow: 2px 2px 2px rgb(61, 61, 205);
+    }
+    #btn{
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/mbjegzae" method="post">
+    <input type="text" name="first_name" id="first_name" placeholder="Enter first name"><br><br>
+    <input type="text" name="last_name" id="last_name" placeholder="Enter last name"><br><br>
+    <input type="email" name="email" id="email" placeholder="Enter email"><br><br>
+    <input type="number" name="cn" id="cn" placeholder="Enter contact no"><br><br>
+    <input type="submit" id="btn" value="submit">
+</body>
+</html>

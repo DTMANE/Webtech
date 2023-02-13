@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        display: inline-block;
+      }
+      .c1 {
+        background-color: red;
+        transform: rotate(30deg);
+      }
+      .c2 {
+        background-color: rgb(217, 255, 0);
+        transform: rotateX(40deg);
+        border-bottom: 5px solid black;
+      }
+      .c3 {
+        background-color: rgb(255, 0, 179);
+        transform: rotatey(30deg);
+        box-shadow: 0px 0px 2px 30px gray;
+        border-bottom: 5px solid black;
+      }
+      .c4 {
+        background-color: rgb(12, 192, 120);
+        transform: rotateZ(20deg);
+        box-shadow: 0px 0px 2px 30px rgb(194, 179, 179);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+  </body>
+</html>

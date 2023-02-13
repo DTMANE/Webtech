@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      * {
+        margin-top: 0px;
+        box-sizing: border-box;
+      }
+      div {
+        width: 100vw;
+        /* padding-left: 20px; */
+      }
+      .one {
+        height: 40px;
+        background-color: antiquewhite;
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 0px;
+        position: sticky;
+        top: 0px;
+      }
+      .two {
+        background-color: cadetblue;
+        height: 100vh;
+        color: whitesmoke;
+      }
+      .sty {
+        background-color: rebeccapurple;
+        margin-left: -20px;
+        height: 30px;
+        margin-top: 80px;
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        display: block;
+        width: 100px;
+        padding-left: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 0px 0px rgb(0, 0, 0);
+      }
+      .abs {
+        background-color: rgb(15, 163, 104);
+        margin-left: -20px;
+        height: 30px;
+        margin-top: 80px;
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        display: block;
+        width: 140px;
+        padding-left: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 0px 0px rgb(0, 0, 0);
+      }
+      .rel {
+        background-color: rgb(15, 163, 104);
+        margin-left: -20px;
+        height: 30px;
+        margin-top: 80px;
+        position: relative;
+        top: 200px;
+        left: 30px;
+        display: block;
+        width: 140px;
+        padding-left: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 0px 0px rgb(0, 0, 0);
+      }
+
+      .footer {
+        background-color: black;
+        height: 60vh;
+        /* border: 2px solid black; */
+      }
+      .footer h2 {
+        color: aliceblue;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h2>I Am Sticky</h2>
+    </div>
+    <div class="two">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta,
+        quos aliquam quisquam id incidunt laboriosam inventore illo atque fuga.
+      </p>
+      <div class="sty">
+        <p>i am a fixed</p>
+      </div>
+      <div class="abs">
+        <h3>I am absolute</h3>
+      </div>
+      <div class="rel">
+        <h3>I am relative</h3>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>I am a footer</h2>
+    </div>
+  </body>
+</html>

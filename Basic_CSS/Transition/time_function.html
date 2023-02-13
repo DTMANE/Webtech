@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time_function</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        color: whitesmoke;
+        margin: 10px;
+        transition: all 1s;
+      }
+      div:hover {
+        transform: translateX(100%);
+      }
+      .default {
+        transition-timing-function: default;
+      }
+      .ease {
+        transition-timing-function: ease;
+      }
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="default">default</div>
+    <div class="ease">ease</div>
+    <div class="linear">linear</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+  </body>
+</html>
